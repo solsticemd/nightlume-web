@@ -240,24 +240,24 @@
             letter-spacing: -.02em;
         }
 
-        .brand-mark {
-            width: 34px;
-            height: 34px;
+.brand-mark {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    background: transparent;
+    transition: transform .5s var(--ease-bounce);
+    will-change: transform;
+}
 
-            display: grid;
-            place-items: center;
-
-            background: var(--accent);
-            color: var(--accent-text);
-
-            border-radius: 11px;
-
-            font-size: 14px;
-            font-weight: 800;
-
-            transition: transform .5s var(--ease-bounce);
-            will-change: transform;
-        }
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
 
         .brand:hover .brand-mark {
             transform: rotate(-8deg) scale(1.08) translateZ(0);
@@ -1417,7 +1417,7 @@
         <a href="#" class="brand">
 
             <div class="brand-mark">
-                N
+                <img src="favicon.ico">
             </div>
 
             <span>Nightlume</span>
@@ -1515,12 +1515,9 @@
 
                 <div class="hero-logo-glow"></div>
 
-                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                <img src="logo.png">
                     <!-- Thin tapered crescent moon -->
                     <!-- Spire / four-point star with long blade -->
-                    <path class="logo-spire" d="M250,105 Q250,175 292,175 Q250,175 250,440 Q250,175 208,175 Q250,175 250,105 Z" />
-                </svg>
-
             </div>
 
         </div>
